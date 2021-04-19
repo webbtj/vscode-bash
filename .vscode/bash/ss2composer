@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker exec ss2-web composer $@

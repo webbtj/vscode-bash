@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker exec -ti ss2-web phpcs --standard=Drupal /var/www/html/web/modules/custom

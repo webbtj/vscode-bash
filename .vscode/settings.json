@@ -1,0 +1,7 @@
+{
+  "phpcs.executablePath": "./src/vendor/bin/phpcs",
+  "terminal.integrated.shellArgs.osx": [
+    "--init-file",
+    "./.vscode/bash/.bashrc-vscode"
+  ]
+}

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+case $1 in
+
+	cbf)
+		sshcbf ${@:2}
+		;;
+	
+	composer)
+		ss2composer ${@:2}
+		;;
+	
+	cs)
+		ss2cs ${@:2}
+		;;
+	
+	drush)
+		ss2drush ${@:2}
+		;;
+
+	shell | sh | bash)
+		ss2shell ${@:2}
+		;;
+	
+	*)
+		printf "\n\t==ss2 commands==\n\n\tcs: Run PHP Code Sniffer\n\tcbf: Run PHPCBF\n\tcomposer: Run Composer commands\n\tdrush: Run Drush commands\n\tsh: Run Shell commands\n\n"
+		;;
+esac
