@@ -13,9 +13,17 @@ case $1 in
 	cs)
 		ss2cs ${@:2}
 		;;
+
+	docker)
+		ss2docker ${@:2}
+		;;
 	
 	drush)
 		ss2drush ${@:2}
+		;;
+
+	oauth | ssl | oauthssl | oauth-ssl)
+		ss2oauth-ssl ${@:2}
 		;;
 
 	shell | sh | bash)
@@ -23,6 +31,6 @@ case $1 in
 		;;
 	
 	*)
-		printf "\n\t==ss2 commands==\n\n\tcs: Run PHP Code Sniffer\n\tcbf: Run PHPCBF\n\tcomposer: Run Composer commands\n\tdrush: Run Drush commands\n\tsh: Run Shell commands\n\n"
+		printf "\n\t==ss2 commands==\n\n\tcs: Run PHP Code Sniffer\n\tcbf: Run PHPCBF\n\tcomposer: Run Composer commands\n\tdocker: start up docker containers\n\tdrush: Run Drush commands\n\toauth: Create public and private keys for Oauth\n\tsh: Run Shell commands\n\n"
 		;;
 esac

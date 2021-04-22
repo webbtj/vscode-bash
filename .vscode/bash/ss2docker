@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker-compose -f docker-compose-proxy.yml up -d && docker-compose -f docker-compose-proxied.yml up -d

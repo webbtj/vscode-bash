@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openssl genrsa -out ssl/private.key 2048 && openssl rsa -in ssl/private.key -pubout > ssl/public.key
